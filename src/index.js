@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
-import Counter from './components/counter.jsx';
-ReactDOM.render(<Counter />, document.getElementById('root'));
+import Counters from './components/counters.jsx';
+ReactDOM.render(<Counters />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change
