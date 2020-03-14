@@ -18,12 +18,12 @@ class Counter  extends Component {
 
     render() { 
         let classesBtn = this.methodClassBtn();
-        return (<React.Fragment>
+        return (<div>
               
                  <span className={this.methodClassBtn()}>{this.state.count}</span>
-                 <button onClick = { this.setIncremente} className ="btn btn-sm btn-dark">Incremente</button>
+                 <button onClick = { this.setIncremente} className ="btn btn-sm btn-dark m-2">Incremente</button>
                  <button onClick={ this.setDecremente} className = " btn btn-sm btn-light m-2">Decrementa</button>
-               </React.Fragment>
+               </div>
                );
     }
 
