@@ -13,14 +13,17 @@ class Counter  extends Component {
     };
 
     setDecremente = ()=> {
-                this.setState( { count : this.state.count - 1});
+        if(this.state.count === 0) {
+            this.state.count = 0
+        }else {
+            this.setState({ count: this.state.count - 1 })
+        }
+               
     }
 
     render() { 
-        console.log(this.props)
         let classesBtn = this.methodClassBtn();
         return (<div>
-              
                  <span className={this.methodClassBtn()}>{this.state.count}</span>
                  <button onClick = { this.setIncremente} className ="btn btn-sm btn-dark">Incremente</button>
                  <button onClick={ this.setDecremente} className = " btn btn-sm btn-light m-2">Decrementa</button>
